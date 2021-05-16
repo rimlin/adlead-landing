@@ -1,0 +1,28 @@
+{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
+
+{# General #}
+<meta name="description" content="{{ metaDescription }}">
+<link rel="canonical" href="{{ absolutePageUrl }}">
+
+{# Open Graph #}
+<meta property="og:site_name" content="{{ metaTitle }}">
+<meta property="og:title" content="{{ metaTitle }}">
+<meta property="og:description" content="{{ metaDescription }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:locale" content="{{ locale }}">
+<meta name="twitter:card" content="{% if image -%}summary_large_image{% else %}summary{% endif %}">
+{%- if image -%}
+    <meta property="og:image" content="{{ image | url | absoluteUrl(site.url) }}">
+{%- endif -%}
+
+{# Favicon #}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }} ">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
+<link rel="manifest" href="{{ '/site.webmanifest' | url }}">
+<link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | url }}" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+{# RSS Feed #}
+<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ metaTitle }}">

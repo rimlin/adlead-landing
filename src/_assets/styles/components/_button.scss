@@ -1,0 +1,22 @@
+.btn {
+	transition: background-color 0.2s;
+	display: inline-block;
+	padding: 8px 20px;
+	border: none;
+	box-sizing: border-box;
+
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: $font-family-base;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+
+	&-primary {
+		background-color: #eb633d;
+
+		&:hover {
+			background-color: darken(#eb633d, 10%);
+		}
+	}
+}

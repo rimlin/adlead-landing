@@ -1,0 +1,29 @@
+// Main Site Layout
+
+body {
+    overflow-x: hidden;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    .header,
+    .footer {
+        flex: none;
+    }
+}
+
+.main {
+    margin-bottom: 64px;
+    flex: 1;
+}
+
+.container {
+    max-width: $container-max-width;
+	padding-right: 2rem;
+    padding-left: 2rem;
+}

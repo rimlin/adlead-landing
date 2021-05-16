@@ -1,0 +1,96 @@
+.promo {
+	padding: 210px 0 165px;
+
+	h1 {
+		font-size: 64px;
+    	line-height: 1.23;
+
+		@include mq-down(sm) {
+			font-size: 2rem;
+		}
+	}
+
+	p {
+		margin-top: 41px;
+		font-size: 20px;
+		color: #8a8a8a;
+
+		@include mq-down(sm) {
+			font-size: 1rem;
+		}
+	}
+}
+
+.features {
+	.row + .row {
+		margin-top: 36px;
+	}
+
+	.row {
+		h3 {
+			font-size: 42px;
+			line-height: 1.23;
+			font-weight: 600;
+
+			@include mq-down(sm) {
+				font-size: 1.5rem;
+			}
+		}
+
+		p {
+			margin-top: 20px;
+			font-size: 20px;
+			line-height: 1.55;
+			font-weight: 300;
+
+
+			@include mq-down(sm) {
+				font-size: 1rem;
+			}
+		}
+
+		img {
+			width: 100%;
+			object-fit: cover;
+
+			@include mq-down(sm) {
+				margin-top: 24px;
+				max-height: 300px;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+.contacts {
+	padding: 150px 0;
+	text-align: center;
+
+	h3 {
+		font-size: 42px;
+		line-height: 1.23;
+
+
+		@include mq-down(sm) {
+			font-size: 1.5rem;
+		}
+	}
+
+	.email {
+		margin-top: 50px;
+
+		font-size: 30px;
+		line-height: 1.45;
+		font-weight: 300;
+
+
+		@include mq-down(sm) {
+			font-size: 1.2rem;
+		}
+
+		a {
+			color: #ff8562;
+			text-decoration: none;
+		}
+	}
+}
