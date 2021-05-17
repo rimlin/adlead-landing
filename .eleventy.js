@@ -52,7 +52,7 @@ module.exports = function (config) {
     // Pass-through files
     config.addPassthroughCopy('src/robots.txt')
     config.addPassthroughCopy('src/site.webmanifest')
-    config.addPassthroughCopy('src/google87665827405d8c22.html')
+    config.addPassthroughCopy('src/yandex_66c87eb9420a92e9.html')
     config.addPassthroughCopy({ 'src/_assets/fonts': 'assets/fonts'})
     config.addPassthroughCopy({ 'src/_assets/images': 'assets/images'})
     config.addPassthroughCopy({ 'src/_assets/images/favicon': '.' })
